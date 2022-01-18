@@ -1,5 +1,7 @@
 # Analiza danych z Messengera
 
+[Aplikacja](https://messenger-analysis.herokuapp.com/)
+
 Autorzy:
 
 - [Mikołaj Gałkowski](https://github.com/galkowskim)
