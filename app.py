@@ -11,11 +11,11 @@ import streamlit as st
 from streamlit_lottie import st_lottie
 from wordcloud import WordCloud
 
-from skrypty.skryptActivity import przygotowanieDanych
-from skrypty.skryptEmojiCloud import przygotowanieDanychEmojiCloud
-from skrypty.skryptHeatMap import przygotowanieDanychHeatmap
-from skrypty.skryptWordCloud import przygotujDaneWordCloud
-from wykresyKod.emojiCloud import EmojiCloud
+from scripts.activity_script import przygotowanieDanych
+from scripts.emojicloud_script import przygotowanieDanychEmojiCloud
+from scripts.heatmap_script import przygotowanieDanychHeatmap
+from scripts.wordcloud_script import przygotujDaneWordCloud
+from plots_scripts.emojiCloud import EmojiCloud
 
 st.set_page_config(layout="wide", page_title="Messenger Analysis", page_icon="💬")
 
