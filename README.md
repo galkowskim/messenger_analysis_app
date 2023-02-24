@@ -1,8 +1,8 @@
-# Analiza danych z Messengera
+# Messenger data analysis
 
-[Aplikacja](https://messenger-analysis.herokuapp.com/)
+[App](https://messenger-analysis.herokuapp.com/)
 
-Autorzy:
+Authors:
 
 - [Mikołaj Gałkowski](https://github.com/galkowskim)
 - [Laura Hoang](https://github.com/hoanganhlinh)
@@ -10,15 +10,15 @@ Autorzy:
 
 
 
-## Przygotowanie danych
+## Data preparation
 
-### Wchodzimy w Ustawienia na Facebook'u i pobieramy dane zgodnie ze zdjęciami poniżej. Zalecamy pobranie danych z maksymalnie 4 lat.
+### Go to Settings on Facebook and download the data according to the images below. We recommend downloading up to 4 years of data.
 
-![](zdjecia/z1.jpg)
-![](zdjecia/z2.jpg)
+![](photos/z1.jpg)
+![](photos/z2.jpg)
 
-Następnie wrzucamy wyciągamy folder messages z zipa i usuwamy z niego wszystko oprócz folderu inbox. W przypadku gdy mamy dwa pliki 
-zip powtarzamy operację i foldery messages nazywamy tak, aby ich nazwa się różniła. Następnie w folderze **przygotowanieDanych** tworzymy 
-folder **wiadomosci** i wrzucamy tam folder messages / foldery messages (różne nazwy). Wywołujemy funkcję ze skryptu **skryptDoDanych.py**
-podając w argumentach swoje imię i nazwisko w stringu (np. "Mikołaj Gałkowski"). W ten sposób otrzymujemy gotową csv'ke, którą możemy użyć
-na stronie []()
+Next, we put in extract the messages folder from the zip and remove everything from it except the `inbox` folder. In case we have two files 
+zip we repeat the operation and name the messages folder so that their names differ. Next, in the folder **dataPreprocessing** we create a 
+folder **messages** and put the `messages` folder / `messages` folders there (different names). We call the function from the script **data_preprocessing.py**.
+giving in the arguments your name in a string (for example, "Mikołaj Gałkowski"). This way we get a ready-made csv'ke, which we can use
+on page []()

@@ -5,7 +5,7 @@ import pandas as pd
 
 
 def createDataframe(osoba):
-    root = os.path.join(os.getcwd(), "wiadomosci")
+    root = os.path.join(os.getcwd(), "messages")
 
     print(root)
 
@@ -13,9 +13,9 @@ def createDataframe(osoba):
     output = []
 
     for mess_folder in os.listdir(root):  # dodane
-        if mess_folder == "tutajDodajemyFolder_Foledry_messages.txt":
+        if mess_folder == "hereWeAddFolder_Folders_messeges.txt":
             continue
-        root = os.path.join(os.getcwd(), "wiadomosci")  # dodane
+        root = os.path.join(os.getcwd(), "messages")  # dodane
         root = os.path.join(root, mess_folder, "inbox")  # dodane
         for thread in os.listdir(root):
             for messagefile in os.listdir(os.path.join(root, thread)):
@@ -50,7 +50,7 @@ def createDataframe(osoba):
     df = pd.DataFrame(output, columns=["id", "author", "sex", "date", "year", "month", "day", "hour", "minute",
                                        "second", "content"])
 
-    df.to_csv(("wiadomosci" + osoba.split(" ")[0] + ".csv"), index=False)
+    df.to_csv(("messages" + osoba.split(" ")[0] + ".csv"), index=False)
 
 
 createDataframe("Mikołaj Gałkowski")
