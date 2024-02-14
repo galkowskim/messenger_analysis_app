@@ -47,3 +47,7 @@ On linux:
 Open your browser and go to `http://localhost:8080/`
 
 ### Development setup - branch `dev` - for more information
+
+## Project setup
+Same procedure as for the web application (**WARNING!** small change in Dockerfile, need to create new image), but `run_docker_dev.sh/.bat` opens the development environment and you go into the container.
+Then you can run application after making some changes from folder `src` using `run_app.sh` script.

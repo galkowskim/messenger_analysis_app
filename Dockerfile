@@ -20,4 +20,5 @@ ENV PYTHONUNBUFFERED=1
 EXPOSE 8080
 
 WORKDIR /app/src
-CMD ["python", "-m", "streamlit", "run", "app.py", "--server.port", "8080", "--server.address", "0.0.0.0"]
+CMD ["bash"]
+# CMD ["python", "-m", "streamlit", "run", "app.py", "--server.port", "8080", "--server.address", "0.0.0.0"]
