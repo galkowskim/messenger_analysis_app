@@ -1,12 +1,8 @@
 import pandas as pd
 import streamlit as st
 
-from visualization import (
-    display_activity_chart,
-    display_emoji_word_cloud,
-    display_header,
-    display_heatmap,
-)
+from visualization import (display_activity_chart, display_emoji_word_cloud,
+                           display_header, display_heatmap)
 
 st.set_page_config(layout="wide", page_title="Messenger Analysis", page_icon="💬")
 
