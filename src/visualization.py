@@ -12,8 +12,12 @@ from matplotlib.ticker import FixedLocator
 from streamlit_lottie import st_lottie
 from wordcloud import WordCloud
 
-from data_utils import (EmojiCloud, prepare_emoji_cloud_data,
-                        prepare_heatmap_data, prepare_word_cloud_data)
+from data_utils import (
+    EmojiCloud,
+    prepare_emoji_cloud_data,
+    prepare_heatmap_data,
+    prepare_word_cloud_data,
+)
 
 
 def load_lottieurl(url: str) -> dict:
