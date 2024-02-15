@@ -8,7 +8,7 @@ import streamlit as st
 from wordcloud import WordCloud
 
 
-@st.experimental_memo(show_spinner=False)
+@st.cache_data(show_spinner=False)
 def prepare_emoji_cloud_data(df: pd.DataFrame, person: str) -> str:
     data = df.loc[(df["author"] == person) & (df["content"].notna()), "content"]
     flattened = [
@@ -35,7 +35,7 @@ def prepare_emoji_cloud_data(df: pd.DataFrame, person: str) -> str:
     return emoji
 
 
-@st.experimental_memo(show_spinner=False)
+@st.cache_data(show_spinner=False)
 def prepare_heatmap_data(
     data: pd.DataFrame, starting_date: str, ending_date: str
 ) -> pd.DataFrame:
@@ -78,7 +78,7 @@ def prepare_heatmap_data(
     return result
 
 
-@st.experimental_memo(show_spinner=False)
+@st.cache_data(show_spinner=False)
 def prepare_word_cloud_data(df: pd.DataFrame, length: int):
     data = df.loc[df["author"] != ""]
     flattened = [
@@ -109,7 +109,7 @@ def prepare_word_cloud_data(df: pd.DataFrame, length: int):
     return " ".join(filtered)
 
 
-@st.experimental_singleton
+@st.cache_resource
 class EmojiCloud:
     def __init__(
         self,
